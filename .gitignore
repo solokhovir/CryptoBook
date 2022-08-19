@@ -1,6 +1,4 @@
 .idea
-.DS_Store
-README.md
 
 ethereum/node_modules
 ethereum/.env
