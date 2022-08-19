@@ -20,11 +20,12 @@ const ShowContact = () => {
         setTelegram("")
         setDiscord("")
         setDesc("")
-        setLoading(true)
+        
         if (!address) {
             setErrorMessage("Введите адрес пользователя")
             return
         }
+        setLoading(true)
         try {
             const contact = await getContactByAddress(address)
             setTelegram(contact.telegram)
